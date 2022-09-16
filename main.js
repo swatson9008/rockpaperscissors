@@ -16,13 +16,20 @@ function getComputerChoice () {
 
 // Write a const variable for player selection, make it case insensitive
 
-//const playerSelection = ;
+//const playerSelection = "Test";
+
+//const playerSelect = playerSelection.toLowerCase();
+
+//console.log(playerSelect);
 
 // Write a const variable for the computer selection
 
 // Write a function to compare the computer selection against the player selection. Include the rules of rock, paper, scissors inside the function
 
-function 
+//function playagame (){
+
+   // if (playerselection = "")
+//}
 
 // Test the function
 
