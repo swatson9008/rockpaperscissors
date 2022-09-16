@@ -1,9 +1,13 @@
 
 // Write an array of choices the computer can make
 
-
+const computerchoice = ["rock", "paper", "scissors"];
 
 // Write a function that lets the computer choose between one of three choices. Call it getComputerChoice
+
+let getComputerChoice = computerchoice[Math.floor(Math.random() * computerchoice.length)];
+
+console.log(getComputerChoice);
 
 // Write a const variable for player selection, make it case insensitive
 
