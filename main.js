@@ -5,15 +5,24 @@ const computerchoice = ["rock", "paper", "scissors"];
 
 // Write a function that lets the computer choose between one of three choices. Call it getComputerChoice
 
-let getComputerChoice = computerchoice[Math.floor(Math.random() * computerchoice.length)];
+function getComputerChoice () {
+    //const computerchoice = ["rock", "paper", "scissors"];
+    let cchoice = computerchoice[Math.floor(Math.random() * computerchoice.length)];
+    return cchoice;
+    
+}
 
-console.log(getComputerChoice);
+//console.log(getComputerChoice());
 
 // Write a const variable for player selection, make it case insensitive
+
+//const playerSelection = ;
 
 // Write a const variable for the computer selection
 
 // Write a function to compare the computer selection against the player selection. Include the rules of rock, paper, scissors inside the function
+
+function 
 
 // Test the function
 
