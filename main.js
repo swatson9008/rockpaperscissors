@@ -40,6 +40,12 @@ function playRound (playerSelect, computerSelection){
    else if (playerSelect==="rock" && computerSelection==="rock"){
    return "It's a tie";
    }
+   else if (playerSelect==="paper" && computerSelection==="scissors"){
+    return "Scissors beat paper, player wins";}
+    else if (player==="paper" && computerSelection==="paper"){
+        return "It's a tie";
+    }
+    
 }
 
 // Test the function
