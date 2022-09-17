@@ -16,9 +16,9 @@ function getComputerChoice () {
 
 // Write a const variable for player selection, make it case insensitive
 
-const playerSelection = "Rock";
+let playerSelection = "Rock";
 
-const playerSelect = playerSelection.toLowerCase();
+let playerSelect = playerSelection.toLowerCase();
 
 //console.log(playerSelect);
 
@@ -26,17 +26,22 @@ const playerSelect = playerSelection.toLowerCase();
 
 // Write a function to compare the computer selection against the player selection. Include the rules of rock, paper, scissors inside the function
 
-function playagame (){
+function playRound (playerSelect, getComputerChoice){
 
    if (playerSelect==="rock" && getComputerChoice==="scissors"){
-    console.log("Rock beats scissors, player wins");
+   return "Rock beats scissors, player wins";
    }
-   if (playerSelect==="rock" && getComputerChoice==="paper"){
-    console.log("Paper beats rock, computer wins");
+   else if (playerSelect==="rock" && getComputerChoice==="paper"){
+   return "Paper beats rock, computer wins";
+   }
+   else if (playerSelect==="rock" && getComputerChoice==="rock"){
+   return "It's a tie";
    }
 }
 
 // Test the function
+
+console.log(playRound(playerSelect, getComputerChoice));
 
 // Make the function return a string based on the results
 
