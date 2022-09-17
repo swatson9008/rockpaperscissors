@@ -12,17 +12,20 @@ function getComputerChoice () {
     
 }
 
+
 //console.log(getComputerChoice());
 
 // Write a const variable for player selection, make it case insensitive
 
-let playerSelection = "Rock";
+const playerSelection = "Rock";
 
-let playerSelect = playerSelection.toLowerCase();
+const playerSelect = playerSelection.toLowerCase();
 
 //console.log(playerSelect);
 
 // Write a const variable for the computer selection
+
+const computerSelection = getComputerChoice();
 
 // Write a function to compare the computer selection against the player selection. Include the rules of rock, paper, scissors inside the function
 
