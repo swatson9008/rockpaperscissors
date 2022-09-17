@@ -17,7 +17,7 @@ function getComputerChoice () {
 
 // Write a const variable for player selection, make it case insensitive
 
-const playerSelection = "Paper";
+const playerSelection = "Scissors";
 
 const playerSelect = playerSelection.toLowerCase();
 
@@ -41,31 +41,38 @@ function playRound (playerSelect, computerSelection){
    return "It's a tie"
    }
    else if (playerSelect==="paper" && computerSelection==="scissors"){
-    return "Scissors beat paper, computer wins"}
-    else if (playerSelect==="paper" && computerSelection==="paper"){
-        return "It's a tie"
-    }
-    else if (playerSelect==="paper" && computerSelection==="rock"){
-        return "Paper beats rock, player wins"
-    }
-    else if (playerSelect==="scissors" && computerSelection==="scissors"){
-        return "It's a tie"
-    }
-    else if (playerSelect==="scissors" && computerSelection==="paper"){
-        return "Scissors beat paper, player wins"
-    }
-    else if (playerSelect==="scissors" && computerSelection==="rock"){
-        return "Rock beats scissors, computer wins"
-    }
+   return "Scissors beat paper, computer wins"
+   }
+   else if (playerSelect==="paper" && computerSelection==="paper"){
+   return "It's a tie"
+   }
+   else if (playerSelect==="paper" && computerSelection==="rock"){
+   return "Paper beats rock, player wins"
+   }
+   else if (playerSelect==="scissors" && computerSelection==="scissors"){
+   return "It's a tie"
+   }
+   else if (playerSelect==="scissors" && computerSelection==="paper"){
+   return "Scissors beat paper, player wins"
+   }
+   else if (playerSelect==="scissors" && computerSelection==="rock"){
+   return "Rock beats scissors, computer wins"
+   }
     
 }
 
 // Test the function
 
-console.log(playRound(playerSelect, computerSelection));
+//console.log(playRound(playerSelect, computerSelection));
 
-// Make the function return a string based on the results
+const playRoundresult = playRound(playerSelect, computerSelection);
+
+//console.log(playRoundresult);
 
 // Make a function to play a game that keeps score and plays for five rounds.
+
+function game(){
+    
+}
 
 // Make a prompt to get input from the player
