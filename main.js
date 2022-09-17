@@ -17,7 +17,7 @@ function getComputerChoice () {
 
 // Write a const variable for player selection, make it case insensitive
 
-const playerSelection = "Rock";
+const playerSelection = "Paper";
 
 const playerSelect = playerSelection.toLowerCase();
 
@@ -42,7 +42,7 @@ function playRound (playerSelect, computerSelection){
    }
    else if (playerSelect==="paper" && computerSelection==="scissors"){
     return "Scissors beat paper, player wins";}
-    else if (player==="paper" && computerSelection==="paper"){
+    else if (playerSelect==="paper" && computerSelection==="paper"){
         return "It's a tie";
     }
     
