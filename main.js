@@ -32,31 +32,31 @@ const computerSelection = getComputerChoice();
 function playRound (playerSelect, computerSelection){
 
    if (playerSelect==="rock" && computerSelection==="scissors"){
-   return "Rock beats scissors, player wins"
+   return "Player wins, rock beats scissors."
    }
    else if (playerSelect==="rock" && computerSelection==="paper"){
-   return "Paper beats rock, computer wins"
+   return "Computer wins, paper beats rock."
    }
    else if (playerSelect==="rock" && computerSelection==="rock"){
-   return "It's a tie"
+   return "Tie."
    }
    else if (playerSelect==="paper" && computerSelection==="scissors"){
-   return "Scissors beat paper, computer wins"
+   return "Computer wins, scissors beat paper."
    }
    else if (playerSelect==="paper" && computerSelection==="paper"){
-   return "It's a tie"
+   return "Tie."
    }
    else if (playerSelect==="paper" && computerSelection==="rock"){
-   return "Paper beats rock, player wins"
+   return "Player wins, paper beats rock."
    }
    else if (playerSelect==="scissors" && computerSelection==="scissors"){
-   return "It's a tie"
+   return "Tie."
    }
    else if (playerSelect==="scissors" && computerSelection==="paper"){
-   return "Scissors beat paper, player wins"
+   return "Player wins, scissors beat paper."
    }
    else if (playerSelect==="scissors" && computerSelection==="rock"){
-   return "Rock beats scissors, computer wins"
+   return "Computer wins, rock beats scissors."
    }
     
 }
@@ -72,7 +72,7 @@ const playRoundresult = playRound(playerSelect, computerSelection);
 // Make a function to play a game that keeps score and plays for five rounds.
 
 function game(){
-    
+
 }
 
 // Make a prompt to get input from the player
