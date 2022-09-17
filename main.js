@@ -69,10 +69,21 @@ const playRoundresult = playRound(playerSelect, computerSelection);
 
 //console.log(playRoundresult);
 
+let playerScore = 0;
+let computerScore = 0;
+
 // Make a function to play a game that keeps score and plays for five rounds.
 
 function game(){
-
+    if (playRound(playerSelect, computerSelection)=startsWith("Player")){
+        return "Player wins round 1."
+    }
+    if (playRound(playerSelect, computerSelection)=startsWith("Computer")){
+        return "Computer wins round 1."
+    }
+    if (playRound(playerSelect, computerSelection)=startsWith("Tie")){
+        return "It's a draw."
+    }
 }
 
 // Make a prompt to get input from the player
