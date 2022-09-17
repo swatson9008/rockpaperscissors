@@ -29,10 +29,13 @@ const computerSelection = getComputerChoice();
 
 // Write a function to compare the computer selection against the player selection. Include the rules of rock, paper, scissors inside the function
 
-function playRound (playerSelect, computerSelection){
+let playerScore = 0;
+let computerScore = 0;
+
+/*function playRound (playerSelect, computerSelection, playerScore){
 
    if (playerSelect==="rock" && computerSelection==="scissors"){
-   return "Player wins, rock beats scissors."
+   return playerScore + 1
    }
    else if (playerSelect==="rock" && computerSelection==="paper"){
    return "Computer wins, paper beats rock."
@@ -59,7 +62,39 @@ function playRound (playerSelect, computerSelection){
    return "Computer wins, rock beats scissors."
    }
     
-}
+}*/
+
+function playRound (playerSelect, computerSelection, playerScore, computerScore){
+
+    if (playerSelect==="rock" && computerSelection==="scissors"){
+    playerScore = playerScore++
+    }
+    else if (playerSelect==="rock" && computerSelection==="paper"){
+    computerScore = computerScore++
+    }
+    else if (playerSelect==="rock" && computerSelection==="rock"){
+    
+    }
+    else if (playerSelect==="paper" && computerSelection==="scissors"){
+    computerScore = computerScore++
+    }
+    else if (playerSelect==="paper" && computerSelection==="paper"){
+    
+    }
+    else if (playerSelect==="paper" && computerSelection==="rock"){
+    playerScore = playerScore++
+    }
+    else if (playerSelect==="scissors" && computerSelection==="scissors"){
+    
+    }
+    else if (playerSelect==="scissors" && computerSelection==="paper"){
+    playerScore = playerScore++
+    }
+    else if (playerSelect==="scissors" && computerSelection==="rock"){
+    computerScore = computerScore++
+    }
+     
+ }
 
 // Test the function
 
@@ -69,21 +104,22 @@ const playRoundresult = playRound(playerSelect, computerSelection);
 
 //console.log(playRoundresult);
 
-let playerScore = 0;
-let computerScore = 0;
-
 // Make a function to play a game that keeps score and plays for five rounds.
 
-function game(){
-    if (playRound(playerSelect, computerSelection)=startsWith("Player")){
+
+
+/*function game(){
+    if (playRound(playerSelect, computerSelection)=(playRoundresult.startsWith("Player")=true)){
         return "Player wins round 1."
     }
-    if (playRound(playerSelect, computerSelection)=startsWith("Computer")){
+    if (playRound(playerSelect, computerSelection)=(playRoundresult.startsWith("Computer")=true)){
         return "Computer wins round 1."
     }
-    if (playRound(playerSelect, computerSelection)=startsWith("Tie")){
+    if (playRound(playerSelect, computerSelection)=(playRoundresult.startsWith("Tie")=true)){
         return "It's a draw."
     }
-}
+}*/
+
+console.log(game());
 
 // Make a prompt to get input from the player
