@@ -29,22 +29,22 @@ const computerSelection = getComputerChoice();
 
 // Write a function to compare the computer selection against the player selection. Include the rules of rock, paper, scissors inside the function
 
-function playRound (playerSelect, getComputerChoice){
+function playRound (playerSelect, computerSelection){
 
-   if (playerSelect==="rock" && getComputerChoice==="scissors"){
+   if (playerSelect==="rock" && computerSelection==="scissors"){
    return "Rock beats scissors, player wins";
    }
-   else if (playerSelect==="rock" && getComputerChoice==="paper"){
+   else if (playerSelect==="rock" && computerSelection==="paper"){
    return "Paper beats rock, computer wins";
    }
-   else if (playerSelect==="rock" && getComputerChoice==="rock"){
+   else if (playerSelect==="rock" && computerSelection==="rock"){
    return "It's a tie";
    }
 }
 
 // Test the function
 
-console.log(playRound(playerSelect, getComputerChoice));
+console.log(playRound(playerSelect, computerSelection));
 
 // Make the function return a string based on the results
 
