@@ -21,7 +21,7 @@ let playerSelection;
 
 // Write a const variable for the computer selection
 
-const computerSelection = getComputerChoice();
+let computerSelection;
 
 // Write a function to compare the computer selection against the player selection. Include the rules of rock, paper, scissors inside the function
 
@@ -32,36 +32,36 @@ function playRound (playerSelection, computerSelection){
 
     if (playerSelection==="rock" && computerSelection==="scissors"){
     ++playerScore
-    return "Player wins"
+    alert("Player Wins")
     }
     else if (playerSelection==="rock" && computerSelection==="paper"){
     ++computerScore
-    return "Computer wins"
+    alert("Computer Wins")
     }
     else if (playerSelection==="rock" && computerSelection==="rock"){
-    return "Tie"
+    alert("Tie")
     }
     else if (playerSelection==="paper" && computerSelection==="scissors"){
     ++computerScore
-    return "Computer wins"
+    alert("Computer Wins")
     }
     else if (playerSelection==="paper" && computerSelection==="paper"){
-     return "Tie"
+    alert("Tie")
     }
     else if (playerSelection==="paper" && computerSelection==="rock"){
     ++playerScore
-    return "Player wins"
+    alert("Player Wins")
     }
     else if (playerSelection==="scissors" && computerSelection==="scissors"){
-    return "Tie"
+    alert("Tie")
     }
     else if (playerSelection==="scissors" && computerSelection==="paper"){
     ++playerScore
-    return "Player wins"
+    alert("Player Wins")
     }
     else if (playerSelection==="scissors" && computerSelection==="rock"){
     ++computerScore
-    return "Computer wins"
+    alert("Computer Wins")
     }
      
  }
@@ -75,8 +75,16 @@ function playRound (playerSelection, computerSelection){
 function game(){
   for (let i = 0; i < 5; i++){
     playerSelection = prompt("Enter rock, paper, scissors", "");
+    computerSelection = getComputerChoice();
     playRound(playerSelection, computerSelection);
-    console.log(i);
+    
+    if (playerScore > computerScore){
+        alert("You are ahead. Score is Player:" + playerScore + " Computer:" + computerScore)};
+    if (computerScore > playerScore){
+        alert("Computer is ahead. Score is Player:" + playerScore + " Computer:" + computerScore)};
+    if (playerScore===computerScore){
+        alert("Its a tie. Score is Player:" + playerScore + " Computer:" + computerScore)};
+
     }
 }
 
