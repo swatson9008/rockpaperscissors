@@ -17,9 +17,7 @@ function getComputerChoice () {
 
 // Write a const variable for player selection, make it case insensitive
 
-const playerSelection = prompt("Enter rock, paper, scissors", "");
-
-const playerSelect = playerSelection.toLowerCase();
+let playerSelection;
 
 // Write a const variable for the computer selection
 
@@ -30,34 +28,40 @@ const computerSelection = getComputerChoice();
 let playerScore = 0;
 let computerScore = 0;
 
-function playRound (playerSelect, computerSelection){
+function playRound (playerSelection, computerSelection){
 
-    if (playerSelect==="rock" && computerSelection==="scissors"){
+    if (playerSelection==="rock" && computerSelection==="scissors"){
     ++playerScore
+    return "Player wins"
     }
-    else if (playerSelect==="rock" && computerSelection==="paper"){
+    else if (playerSelection==="rock" && computerSelection==="paper"){
     ++computerScore
+    return "Computer wins"
     }
-    else if (playerSelect==="rock" && computerSelection==="rock"){
-    
+    else if (playerSelection==="rock" && computerSelection==="rock"){
+    return "Tie"
     }
-    else if (playerSelect==="paper" && computerSelection==="scissors"){
+    else if (playerSelection==="paper" && computerSelection==="scissors"){
     ++computerScore
+    return "Computer wins"
     }
-    else if (playerSelect==="paper" && computerSelection==="paper"){
-     
+    else if (playerSelection==="paper" && computerSelection==="paper"){
+     return "Tie"
     }
-    else if (playerSelect==="paper" && computerSelection==="rock"){
+    else if (playerSelection==="paper" && computerSelection==="rock"){
     ++playerScore
+    return "Player wins"
     }
-    else if (playerSelect==="scissors" && computerSelection==="scissors"){
-    
+    else if (playerSelection==="scissors" && computerSelection==="scissors"){
+    return "Tie"
     }
-    else if (playerSelect==="scissors" && computerSelection==="paper"){
+    else if (playerSelection==="scissors" && computerSelection==="paper"){
     ++playerScore
+    return "Player wins"
     }
-    else if (playerSelect==="scissors" && computerSelection==="rock"){
+    else if (playerSelection==="scissors" && computerSelection==="rock"){
     ++computerScore
+    return "Computer wins"
     }
      
  }
@@ -66,22 +70,17 @@ function playRound (playerSelect, computerSelection){
 
 //console.log(playRound(playerSelect, computerSelection));
 
-//const playRoundresult = playRound(playerSelect, computerSelection);
-
-//console.log(playRoundresult);
-
 // Make a function to play a game that keeps score and plays for five rounds.
 
 function game(){
   for (let i = 0; i < 5; i++){
-    playRound(playerSelect, computerSelection);
-    return(playerScore)
+    playerSelection = prompt("Enter rock, paper, scissors", "");
+    playRound(playerSelection, computerSelection);
+    console.log(i);
     }
 }
 
 
-//console.log(game());
-
-// Make a prompt to get input from the player
+console.log(game())
 
 
