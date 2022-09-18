@@ -17,11 +17,9 @@ function getComputerChoice () {
 
 // Write a const variable for player selection, make it case insensitive
 
-const playerSelection = "Rock";
+const playerSelection = prompt("Enter rock, paper, scissors", "");
 
 const playerSelect = playerSelection.toLowerCase();
-
-//console.log(playerSelect);
 
 // Write a const variable for the computer selection
 
@@ -68,7 +66,7 @@ function playRound (playerSelect, computerSelection){
 
 //console.log(playRound(playerSelect, computerSelection));
 
-const playRoundresult = playRound(playerSelect, computerSelection);
+//const playRoundresult = playRound(playerSelect, computerSelection);
 
 //console.log(playRoundresult);
 
@@ -82,6 +80,8 @@ function game(){
 }
 
 
-console.log(game());
+//console.log(game());
 
 // Make a prompt to get input from the player
+
+
