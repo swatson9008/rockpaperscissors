@@ -30,36 +30,36 @@ let computerScore = 0;
 
 function playRound (playerSelection, computerSelection){
 
-    if (playerSelection==="rock" && computerSelection==="scissors"){
+    if (playerSelection.toLowerCase()==="rock" && computerSelection==="scissors"){
     ++playerScore
     alert("Player Wins")
     }
-    else if (playerSelection==="rock" && computerSelection==="paper"){
+    else if (playerSelection.toLowerCase()==="rock" && computerSelection==="paper"){
     ++computerScore
     alert("Computer Wins")
     }
-    else if (playerSelection==="rock" && computerSelection==="rock"){
+    else if (playerSelection.toLowerCase()==="rock" && computerSelection==="rock"){
     alert("Tie")
     }
-    else if (playerSelection==="paper" && computerSelection==="scissors"){
+    else if (playerSelection.toLowerCase()==="paper" && computerSelection==="scissors"){
     ++computerScore
     alert("Computer Wins")
     }
-    else if (playerSelection==="paper" && computerSelection==="paper"){
+    else if (playerSelection.toLowerCase()==="paper" && computerSelection==="paper"){
     alert("Tie")
     }
-    else if (playerSelection==="paper" && computerSelection==="rock"){
+    else if (playerSelection.toLowerCase()==="paper" && computerSelection==="rock"){
     ++playerScore
     alert("Player Wins")
     }
-    else if (playerSelection==="scissors" && computerSelection==="scissors"){
+    else if (playerSelection.toLowerCase()==="scissors" && computerSelection==="scissors"){
     alert("Tie")
     }
-    else if (playerSelection==="scissors" && computerSelection==="paper"){
+    else if (playerSelection.toLowerCase()==="scissors" && computerSelection==="paper"){
     ++playerScore
     alert("Player Wins")
     }
-    else if (playerSelection==="scissors" && computerSelection==="rock"){
+    else if (playerSelection.toLowerCase()==="scissors" && computerSelection==="rock"){
     ++computerScore
     alert("Computer Wins")
     }
@@ -88,7 +88,16 @@ function game(){
     }
 }
 
+function pickwinner (){
+    game();
+    if (playerScore > computerScore){
+        alert("You Win")};
+    if (computerScore > playerScore){
+        alert("You Lose")};
+    if (playerScore===computerScore){
+        alert("You tied")};
+}
 
-console.log(game())
+console.log(pickwinner());
 
 
