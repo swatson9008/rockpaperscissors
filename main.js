@@ -1,10 +1,7 @@
 
-
-
+//this is the variables and function that randomizes the computer choice for the game
 const computerchoice = ["rock", "paper", "scissors"];
 
-
-//this is the function that randomizes the computer choice for the game
 function getComputerChoice () {
     let cchoice = computerchoice[Math.floor(Math.random() * computerchoice.length)];
     return cchoice;
@@ -24,22 +21,22 @@ scissorsIMG.addEventListener('click', playSciss);
 papersIMG.addEventListener('click', playPapers);
 rockIMG.addEventListener('click', playRocks);
 
-//function that plays each round
+//functions that plays each choice, calculate rounds, and declare a winner
 function playSciss(){
     let computerSelection = getComputerChoice();
         if (computerSelection==="scissors"){
         ++roundNo
-        alert("Tie")
+        document.getElementById("roundResult").textContent = "It's a Tie This Time"
         }
         else if (computerSelection==="paper"){
         ++roundNo
         ++playerScore
-        alert("Player Wins")
+        document.getElementById("roundResult").textContent = "Player Wins This Round"
         }
         else if (computerSelection==="rock"){
         ++roundNo
         ++computerScore
-        alert("Computer Wins")
+        document.getElementById("roundResult").textContent = "Computer Wins This Round"
         }
     
         document.getElementById("playerScores").textContent = "Player Score: " + playerScore;
@@ -64,16 +61,17 @@ function playPapers(){
         if (computerSelection==="scissors"){
         ++roundNo
         ++computerScore
-        alert("Computer Wins")
+        document.getElementById("roundResult").textContent = "Computer Wins This Round"
         }
         else if (computerSelection==="paper"){
         ++roundNo
-        alert("Tie")
+        document.getElementById("roundResult").textContent = "It's a Tie This Time"
         }
         else if (computerSelection==="rock"){
         ++roundNo
         ++playerScore
-        alert("Player Wins")}
+        document.getElementById("roundResult").textContent = "Player Wins This Round"
+        }
 
         document.getElementById("playerScores").textContent = "Player Score: " + playerScore;
         document.getElementById("computerScores").textContent = "Computer Score: " + computerScore;
@@ -96,16 +94,16 @@ function playRocks(){
         if (computerSelection==="scissors"){
         ++roundNo
         ++playerScore
-        alert("Player Wins")
+        document.getElementById("roundResult").textContent = "Player Wins This Round"
         }
         else if (computerSelection==="paper"){
         ++roundNo
         ++computerScore
-        alert("Computer Wins")
+        document.getElementById("roundResult").textContent = "Computer Wins This Round"
         }
         else if (computerSelection==="rock"){
         ++roundNo
-        alert("Tie")
+        document.getElementById("roundResult").textContent = "It's a Tie This Time"
         }
 
         document.getElementById("playerScores").textContent = "Player Score: " + playerScore;
@@ -123,6 +121,9 @@ function playRocks(){
         }
 
 }
+
+
+//!Old code below, ignore!//
 
 //papersIMG.addEventListener('click', playRound("paper"));
 //rockIMG.addEventListener('click', playRound("rock"));
@@ -176,7 +177,7 @@ function playRocks(){
 
 
 
- //!Old code below, ignore!//
+ 
 
 //console.log(getComputerChoice());
 

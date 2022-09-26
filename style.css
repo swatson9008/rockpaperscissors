@@ -1,9 +1,13 @@
 body { 
     background-color: lightpink;
-
+    font-size: 20px;
 }
 
 h1 {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }
 
@@ -17,3 +21,5 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+
