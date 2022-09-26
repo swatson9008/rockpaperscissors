@@ -1,0 +1,19 @@
+body { 
+    background-color: lightpink;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#spGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#rGroup {
+    display: flex;
+    justify-content: center;
+}
